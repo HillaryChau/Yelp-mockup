@@ -1,0 +1,378 @@
+/******************************************
+/* SETUP
+/*******************************************/
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+	clear: both;
+}
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+.alignleft {
+	float: left;
+	padding: 0 1px 1px 0; /* note the padding around a left floated image */
+}
+html {
+  font-size: 62.5%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+/******************Start Here**************************/
+main{
+  background-image: url(../images/tatte.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+}
+.topLeft{
+  width: 40%;
+  /* border: 2px solid pink; */
+  height: 5rem;
+  display: block;
+  color:  rgb(255, 255, 255);
+  float: left;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 10%;
+  margin-top: 0.5rem;
+}
+
+.signup{
+  background-color: rgba(0,0,0,0.2);
+  color: rgb(255,255,255);
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(255,255,255);
+}
+
+.topRight a{
+  color: rgb(255,255,255);
+}
+
+
+li{
+  list-style: none; /*rid bullet*/
+  display: inline;
+  padding: 1rem;
+}
+ ul > li > a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.hamburger{
+  display: none;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.topRight{
+  width: 40%;
+  height: 5rem;
+  /* border: 2px solid purple; */
+  color:  rgb(255, 255, 255);
+  float: left;
+  text-align: right;
+  font-size: 1.5rem;
+  margin-right: 10%;
+}
+
+.topRight span{
+  color: rgb(255,255,255);
+  padding-left: 1rem;
+}
+.logo{
+  width: 10%;
+  /* border: 2px solid green; */
+  margin:  5rem auto;
+  display: block;
+}
+.search{
+  color: rgb(255,255,255);
+  text-align: center;
+  height: 6rem;
+}
+.search > input{
+  height: 3rem;
+  vertical-align: bottom;
+  width: 30rem;
+}
+.search button{
+  height: 3rem;
+  width: 4rem;
+  background: url(../images/redsearch.png) no-repeat;
+  background-size: contain;
+  vertical-align: bottom;
+}
+.theButton{
+  display: inline-block;
+}
+.activities{
+  text-align: center;
+  margin-top: 4rem;
+  color: rgb(255,255,255);
+  font-size: 1rem;
+}
+.tatte{
+  text-align: center;
+  color: rgb(255,255,255);
+}
+/*Dashlin helped*/
+/**********SECOND PAGE TOP************/
+.yelpBoston{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.yelpBoston > h3{
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  color: rgb(211, 35, 35);
+}
+.business{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.new{
+  height: 50rem;
+  width: 80%;
+  /* border: 2px solid black; */
+  margin: 0 auto;
+  padding: 3rem;
+}
+.Thai{
+  margin-left: 3rem;
+}
+.box{
+  width: 25%;
+  height: 30rem;
+  /* border: 1px solid pink; */
+  float: left;
+  margin-right: 2rem;
+}
+.box .food{
+  width: 100%;
+}
+.box .stars{
+  width: 35%;
+}
+.box h4{
+  font-size: 1.5rem;
+}
+.box p{
+  font-size: 1.2rem;
+}
+.hot{
+  color: rgb(47, 135, 195); /*blue*/
+  display: none;
+}
+
+.food{
+  width: 100%;
+  margin-left: 6%;
+}
+
+.red{
+  color: red;
+  text-align: center;
+  display: block;
+}
+.category{
+  background: rgb(245, 245, 245);
+  height: 17rem;
+  /* border: 2px solid blue; */
+  background: rgb(245, 245, 245);
+  padding-top: 1rem;
+}
+.category section{
+  border: 1px solid rgb(206, 201, 201);
+  background: rgb(255, 255, 255);
+  width: 12%;
+  float: left;
+  height: 10rem;
+  margin-right: 2rem;
+  text-align: center;
+  padding-top: 1.1rem;
+  margin-top: 1.5rem;
+}
+.category section img{
+  width: 35%;
+}
+.restaurants{
+  margin-left: 23%;
+}
+.mobileHeader{
+  display: none;
+}
+/************************************************/
+/*****Tablet*****/
+@media (min-width: 651px) and (max-width: 900px){
+  .mobileHeader{
+    display: none;
+  }
+  .topLeft li{
+    display: none;
+  }
+  .topRight{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+    font-size: 3rem;
+  }
+  .new{
+    padding: 0px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .box{
+    width: 25%;
+  }
+  .category section{
+    width: 20%;
+  }
+
+  .food{
+    margin: 0rem;
+  }
+
+  .restaurants{
+    margin-left: 2rem;
+  }
+}
+/* large mobile */
+@media (min-width: 521px) and (max-width: 650px){
+  .mobileHeader{
+    display: none;
+  }
+  .topLeft li{
+    display: none;
+  }
+  .topRight{
+    display: none;
+  }
+
+  .food{
+    margin: 0rem;
+  }
+
+  .hamburger{
+    display: block;
+    font-size: 3rem;
+  }
+  .box{
+    width: 85%;
+    margin-left: 2rem;
+  }
+  .food .box {
+    width: 85%;
+    margin-left: 2rem;
+    height: 33rem;
+  }
+
+  .new{
+    height: 110rem;
+  }
+.category section{
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+  }
+.category section img{
+    width: 12%;
+  }
+.category{
+    height: 600px;
+    float: left;
+    width: 100%;
+}
+.restaurants{
+  margin-left: 0rem;
+}
+}
+/*mobile 500px*/
+@media only screen and (max-width: 520px){
+.mobileHeader{
+  display: block;
+  float: left;
+  height: auto;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+.food{
+  margin: 0px;
+}
+
+.mobile-menu{
+  width: 10%;
+  float: right;
+}
+.mobileLogo{
+  font-size: 16px;
+  float: left;
+  width: 30%;
+  padding-left: 10px;
+}
+  .topLeft li{
+    display: none;
+  }
+  .topRight{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+    font-size: 3rem;
+  }
+  img .logo{
+    width: 100%;
+  }
+  .search{
+    display: none;
+  }
+  .food .box {
+    width: 85%;
+    margin-left: 2rem;
+    height: 35rem;
+  }
+  .new{
+    height: 85rem;
+    padding-top: 6rem;
+  }
+  .category section{
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+  }
+.category section img{
+    width: 20%;
+  }
+  .category{
+    height: 600px;
+    float: left;
+    width: 100%;
+  }
+.restaurants{
+  margin-left: 0rem;
+}
+main{
+  display: none;
+}
+}
