@@ -1,9 +1,9 @@
-# Yelp-mockup
+/*# Yelp-mockup
 This is a front-end replication of the site of Yelp.com
 
 Link:  https://hillary-yelp.netlify.app/
 
-Tech used: HTML CSS
+Tech used: HTML CSS*/
 
 <img src="/images/yelp.PNG" alt="yelp" style="height: 100px; width:100px;"/>
 
